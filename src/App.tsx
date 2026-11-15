@@ -124,19 +124,6 @@ function Home({ ctx }: { ctx: Ctx }) {
         ))}
       </nav>
 
-      <section className="card pass">
-        <h3>次の組長へ、渡す</h3>
-        <div className="row wrap">
-          <button className="btn primary" onClick={() => ctx.go('handover')}>
-            📲 デジタルで一括引き継ぎ（5分）
-          </button>
-          <button className="btn primary" onClick={() => ctx.print('booklet')}>
-            🖨 紙の冊子をA4で印刷
-          </button>
-        </div>
-        <p className="muted">紙の資料は、画面下の「紙を取り込む」から、写真やスキャンで取り込めます。</p>
-      </section>
-
       <details className="card settings">
         <summary>設定・データ</summary>
         <label className="check big">
